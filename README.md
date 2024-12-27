@@ -17,8 +17,8 @@ We are going to divide templates in to two categories
    
 **Step-01: Create Network Stack (Parent Stack)**
 We are going to build the network stack in a incremental manner.
-01-01-Fargate-NetworkStack-CreateVPC.yml
 
+01-01-Fargate-NetworkStack-CreateVPC.yml
 01-02-Fargate-NetworkStack-Create-ECSCluster-ECSRoles.yml
 01-03-Fargate-NetworkStack-Create-SecurityGroups-LoadBalancers.yml
 01-04-Fargate-NetworkStack-Create-Outputs.yml
