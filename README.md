@@ -16,21 +16,25 @@ We are going to divide templates in to two categories
 4. Create ECS Service
    
 **Step-01: Create Network Stack (Parent Stack)**
+
 We are going to build the network stack in a incremental manner.
 
-01-01-Fargate-NetworkStack-CreateVPC.yml
-01-02-Fargate-NetworkStack-Create-ECSCluster-ECSRoles.yml
-01-03-Fargate-NetworkStack-Create-SecurityGroups-LoadBalancers.yml
-01-04-Fargate-NetworkStack-Create-Outputs.yml
+1. 01-01-Fargate-NetworkStack-CreateVPC.yml
+2. 01-02-Fargate-NetworkStack-Create-ECSCluster-ECSRoles.yml
+3. 01-03-Fargate-NetworkStack-Create-SecurityGroups-LoadBalancers.yml
+4. 01-04-Fargate-NetworkStack-Create-Outputs.yml
 
 **Step-02: Create Fargate Service Stack**
+
 We are going to build the network stack in a incremental manner.
-02-01-Fargate-ServiceStack-Create-InputParameters.yml
-02-02-Fargate-ServiceStack-Create-TaskDefinition.yml
-02-03-Fargate-ServiceStack-Create-ALB-TargetGroup-and-LoadBalancerRule.yml
-02-04-Fargate-ServiceStack-Create-ECSService.yml
+
+1. 02-01-Fargate-ServiceStack-Create-InputParameters.yml
+2. 02-02-Fargate-ServiceStack-Create-TaskDefinition.yml
+3. 02-03-Fargate-ServiceStack-Create-ALB-TargetGroup-and-LoadBalancerRule.yml
+4. 02-04-Fargate-ServiceStack-Create-ECSService.yml
 
 **Step-03: Clean-Up**
+
 Delete CloudFormation Stacks
-First delete Service Stack
-Next delete the Network Stack ( Network stack resources are used in Service Stack - Always recommended to delete parent stacks at the end.)
+1. First delete Service Stack
+2. Next delete the Network Stack ( Network stack resources are used in Service Stack - Always recommended to delete parent stacks at the end.)
