@@ -8,6 +8,7 @@ We are going to divide templates in to two categories
 2. Create ECS Cluster & ECS Roles
 3. Create Load Balancer (ALB)
 4. Create Outputs
+
 **Faragte Service Stack
 1. Create Input Parameters
 2. Create Task Definition
